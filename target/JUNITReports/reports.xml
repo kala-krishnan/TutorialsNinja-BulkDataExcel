@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="64.804">
+    <testcase classname="Launching on to the Tutorials Ninja home page and go to the register page" name="User launching the Tutorials Ninja Home Page" time="16.307">
+        <system-out>
+            <![CDATA[Given User launch the browser and user is in the Tutorial ninja home page...passed
+Then User should redirect to the Tutorials Ninja Home Page..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Launching on to the Tutorials Ninja home page and go to the register page" name="User is redirecting to the Tutorials Ninja Register Page" time="5.424">
+        <system-out>
+            <![CDATA[When User clicks register from myaccount dropdown...........................passed
+Then User should redirect to the Tutorials Ninja register page..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has to be registered successfully" time="4.427">
+        <failure message="expected:&lt;...nt Has Been Created![]&gt; but was:&lt;...nt Has Been Created![&#10;Congratulations! Your new account has been successfully created!&#10;You can now take advantage of member privileges to enhance your online shopping experience with us.&#10;If you have ANY questions about the operation of this online shop, please e-mail the store owner.&#10;A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.&#10;Continue]&gt;" type="junit.framework.ComparisonFailure">
+            <![CDATA[Given The user is in the register page......................................passed
+When the user clicks continue button after giving the details using "RegisterValid" and "Register".passed
+Then the user has to be registered successfully.............................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<...nt Has Been Created![]> but was:<...nt Has Been Created![
+Congratulations! Your new account has been successfully created!
+You can now take advantage of member privileges to enhance your online shopping experience with us.
+If you have ANY questions about the operation of this online shop, please e-mail the store owner.
+A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please contact us.
+Continue]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.tutorialNinjas.bulktesting.stepdefinitions.RegisterPage_Stepdefinitions.the_user_has_to_be_registered_successfully(RegisterPage_Stepdefinitions.java:40)
+	at ✽.the user has to be registered successfully(file:///Users/krishna/eclipse-workspace/TutorialsNinja-BulkDataExcel/src/test/resources/feature/registerPage.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Register user" name="The user is logging out Successfully" time="3.982">
+        <failure message="expected:&lt;Account Logout[]&gt; but was:&lt;Account Logout[&#10;You have been logged off your account. It is now safe to leave the computer.&#10;Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.&#10;Continue]&gt;" type="junit.framework.ComparisonFailure">
+            <![CDATA[Given The user is in the register page......................................passed
+When the user clicks logout option from MyAccount...........................passed
+Then the user has to be logged out successfully.............................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<Account Logout[]> but was:<Account Logout[
+You have been logged off your account. It is now safe to leave the computer.
+Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.
+Continue]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.tutorialNinjas.bulktesting.stepdefinitions.RegisterPage_Stepdefinitions.the_user_has_to_be_logged_out_successfully(RegisterPage_Stepdefinitions.java:50)
+	at ✽.the user has to be logged out successfully(file:///Users/krishna/eclipse-workspace/TutorialsNinja-BulkDataExcel/src/test/resources/feature/registerPage.feature:17)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered" time="5.722">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryFirstName" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered 2" time="5.619">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryLastName" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered 3" time="5.587">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryEmail" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered 4" time="5.657">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryTelephone" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered 5" time="5.924">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryPassword" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register user" name="the user has not to be registered 6" time="5.726">
+        <system-out>
+            <![CDATA[Given The user is in the register page......................................passed
+Given The user is in the register page for invalid scenario.................passed
+When the user clicks continue button after giving invalid details using "RegisterwithoutMandatoryConfirmPassword" and "Register".passed
+Then the user should not be registered......................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
